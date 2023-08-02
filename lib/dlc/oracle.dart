@@ -1,6 +1,10 @@
 import 'package:bitcoin_flutter/bitcoin_flutter.dart';
 
 void main() {
+
+  //Bitcoin Network
+  BitcoinNetwork = BitcoinNetwork.testnet();
+
   // Generate private key and corresponding public key
   ECPrivateKey privateKey = ECPrivateKey.generate();
   ECPublicKey publicKey = privateKey.publicKey;
