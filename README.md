@@ -4,4 +4,8 @@
 
  ## Standard Library
 
-TBD
+- Oracle
+- Taproot
+- Signet, Testnet and Mainnet
+- Signatures
+- Elliptic Curve
