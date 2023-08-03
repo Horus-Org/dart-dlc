@@ -1,28 +1,95 @@
 import 'package:bitcoin_flutter/bitcoin_flutter.dart';
 
-void main() {
+class BitcoinNetwork {
+  final network = Network.testnet();
+}
+class Oracle {
+  late ECPrivateKey sk;
+  late ECPublicKey pk;
 
-  //Bitcoin Network
-  BitcoinNetwork = BitcoinNetwork.testnet();
+  Oracle(ECPrivateKey privateKey) {
+    sk = privateKey;
+    pk = sk.publicKey!;
+  }
 
-  // Generate private key and corresponding public key
-  ECPrivateKey privateKey = ECPrivateKey.generate();
-  ECPublicKey publicKey = privateKey.publicKey;
+  Map<String, dynamic> signEvent(Event event) {
+    final sighash = Announcement.sighash(event);
+    final aux = Utils.newRandInt();
+    final sig = Schnorr.sign(sk, sighash, aux);
 
-  print('Private Key: ${privateKey.toHex()}');
-  print('Public Key: ${publicKey.toHex()}');
+    return {
+      'announcement': Announcement.new(sig, pk, event),
+    };
+  }
 
-  // Simulate an oracle providing an outcome
-  String oracleOutcome = 'Heads';
-  DateTime timestamp = DateTime.now();
-  String announcementMessage = '$oracleOutcome-$timestamp';
+  Attestation attest(Announcement announcement, int outcomeIndex) {
+    final outcome = announcement.event.descriptor.outcomes[outcomeIndex];
+    final sigResult = signOutcome(sk, outcome);
+    if (sigResult['success'] != null && sigResult['success']) {
+      final sig = sigResult['sig'];
+      return Attestation.new(announcement.event.id, pk, [sig], [outcome]);
+    } else {
+      throw Exception('Signing outcome failed');
+    }
+  }
 
-  // Oracle signs the announcement message
-  String oraclePrivateKeyHex = 'oracle_private_key_in_hex';
-  ECPrivateKey oraclePrivateKey = ECPrivateKey.fromHex(oraclePrivateKeyHex);
-  ECSignature oracleSignature = privateKey.sign(Uint8List.fromList(announcementMessage.codeUnits));
+  Map<String, dynamic> signOutcome(ECPrivateKey privateKey, String outcome) {
+    final aux = Utils.newRandInt();
+    final sighash = Attestation.sighash(outcome);
+    final sig = Schnorr.sign(privateKey, sighash, aux);
 
-  print('Oracle Announcement: $announcementMessage');
-  print('Oracle Signature: ${oracleSignature.toHex()}');
+    return {
+      'success': true,
+      'sig': sig,
+    };
+  }
 }
 
+class Announcement {
+  ECSignature signature;
+  ECPublicKey publicKey;
+  Event event;
+
+  Announcement(this.signature, this.publicKey, this.event);
+
+  static int sighash(Event event) {
+    // Implement the sighash logic here
+    return 0;
+  }
+}
+
+class Event {
+  // Define the Event structure
+}
+
+class Attestation {
+  String eventId;
+  ECPublicKey publicKey;
+  List<ECSignature> signatures;
+  List<String> outcomes;
+
+  Attestation(this.eventId, this.publicKey, this.signatures, this.outcomes);
+
+  static int sighash(String outcome) {
+    // Implement the sighash logic here
+    return 0;
+  }
+}
+
+class Utils {
+  // Implement utility functions here
+}
+
+class Messaging {
+  // Implement messaging functions here
+}
+
+class Schnorr {
+  static ECSignature sign(ECPrivateKey privateKey, int sighash, int aux) {
+    // Implement Schnorr signing logic here
+  }
+}
+
+void main() {
+  // Your main code here
+}
