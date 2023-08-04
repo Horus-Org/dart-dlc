@@ -9,3 +9,7 @@
 - Signet, Testnet and Mainnet
 - Signatures
 - Elliptic Curve
+
+## Status Software
+
+The library is in Alpha.
