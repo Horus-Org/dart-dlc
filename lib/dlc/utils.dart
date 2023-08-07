@@ -3,7 +3,7 @@ import 'package:convert/convert.dart';
 import 'package:bitcoin_flutter::Script';
 import 'package:bitcoin_flutter::Secp256k1';
 
-class dlcUtils {
+class DLCUtils {
   int protocolVersionV0 = 0;
 
   int getProtocolVersion() {
