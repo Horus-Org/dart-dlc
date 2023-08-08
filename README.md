@@ -9,6 +9,7 @@
 - Signet, Testnet and Mainnet
 - Signatures
 - Elliptic Curve
+- Lightning Network (LDK)
 
 ## Status Software
 
