@@ -27,14 +27,3 @@ Uint8List serializeDlcTransaction(DlcTransaction dlcTransaction) {
 DlcTransaction deserializeDlcTransaction(Uint8List serializedData) {
   // Deserialize using BitcoinTransaction methods
 }
-
-import 'package:dlc_library/dlc_library.dart';
-
-void main() {
-  // Example usage of your DLC library
-  final privateKey = Uint8List.fromList([/* your private key bytes */]);
-  final message = Uint8List.fromList([/* your message bytes */]);
-  final signature = signMessage(privateKey, message);
-
-  print('Signature: ${signature.toHexString()}');
-}
