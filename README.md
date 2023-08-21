@@ -11,6 +11,13 @@
 - Elliptic Curve
 - Lightning Network (LDK)
 
+## Roadmap
+
+- [ ] LDK integration
+- [ ] Data
+- [ ] Exc
+- [ ] Taproot Channels
+
 ## Status Software
 
 The library is in Alpha.
