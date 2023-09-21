@@ -13,10 +13,10 @@
 
 ## Roadmap
 
-- [ ] LDK integration
+- [x] LDK integration
 - [ ] Data
 - [ ] Exc
-- [ ] Taproot Channels
+- [x] Taproot Channels
 
 ## Status Software
 
