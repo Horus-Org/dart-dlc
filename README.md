@@ -14,9 +14,11 @@
 ## Roadmap
 
 - [x] LDK integration
-- [ ] Data
-- [ ] Exc
+- [x] Data
+- [x] Exc
 - [x] Taproot Channels
+- [ ] Alpha software to Beta
+- [ ] Complete libraries
 
 ## Status Software
 
