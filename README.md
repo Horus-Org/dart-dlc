@@ -18,7 +18,7 @@
 - [x] Exc
 - [x] Taproot Channels
 - [ ] Alpha software to Beta
-- [ ] Complete libraries
+- [ ] Complete libraries (WIP)
 
 ## Status Software
 
