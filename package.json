@@ -1,3 +1,10 @@
 {
 "name":"Dart-DLC",
-"version":"1.0.1-Alpha",
+"version":"1.0.0-Beta.rc1",
+},
+"packages",
+"ldk",
+"exc",
+"taproot channel",
+"contract",
+"oracle",
