@@ -22,4 +22,4 @@
 
 ## Status Software
 
-The library is in Alpha.
+The library is in Beta
