@@ -1,12 +1,12 @@
 
 # Name of your Dart package
-name: your_package_name
+name: dar_dlc
 
 # Description of your package
-description: A brief description of your package
+description: Dart DLC library
 
 # Version of your package (e.g., 1.0.0)
-version: 1.0.0
+version: 1.0.0-beta.rc1
 
 # The environment for your Dart project (e.g., 2.12)
 environment:
