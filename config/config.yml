@@ -1,0 +1,40 @@
+
+# Name of your Dart package
+name: your_package_name
+
+# Description of your package
+description: A brief description of your package
+
+# Version of your package (e.g., 1.0.0)
+version: 1.0.0
+
+# The environment for your Dart project (e.g., 2.12)
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+# Dependencies for your project
+dependencies:
+  # Add your project's dependencies here
+  # Example:
+  # http: ^0.13.3
+  # path: ^1.8.0
+
+# Dev dependencies for your project
+dev_dependencies:
+  # Add your project's dev dependencies here
+  # Example:
+  # test: ^2.14.0
+
+# Flutter-specific configurations (if it's a Flutter project)
+flutter:
+
+  # Assets for your Flutter project
+  assets:
+    - assets/images/
+    - assets/fonts/
+
+  # Fonts for your Flutter project
+  fonts:
+    - family: YourFontFamily
+      fonts:
+        - asset: assets/fonts/your_font.ttf
