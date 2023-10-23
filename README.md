@@ -15,6 +15,7 @@
 
 - [x] Alpha software to Beta
 - [x] Complete libraries (WIP)
+- [x] Docs (WIP)
 
 ## Status Software
 
