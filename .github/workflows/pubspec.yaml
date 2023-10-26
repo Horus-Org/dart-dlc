@@ -1,4 +1,5 @@
 name: dart_dlc
-description: DLC library in Dary
+description: dart dlc library
 dependencies:
+  some_dependency: ^1.0.0-beta.rc3
 
