@@ -1,6 +1,8 @@
-# Dart DLC
+# Dart DLC ⚡
 
  A pure Dart  DLC Library 
+
+ ⚠️**Beta software and WIP**
 
  ## Standard Library
 
@@ -19,4 +21,4 @@
 
 ## Status Software
 
-The library is in Beta
+The library is in Beta and WIP
