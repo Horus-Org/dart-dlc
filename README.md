@@ -18,6 +18,7 @@
 - [x] Alpha software to Beta
 - [x] Complete libraries (WIP)
 - [x] Docs (WIP)
+- [ ] Relase official beta
 
 ## Status Software
 
