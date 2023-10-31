@@ -12,7 +12,7 @@
 
 ## 1. Introduction <a name="introduction"></a>
 
-Provide a brief overview of your Dart Dynamic Linked Component (DLC). Explain its purpose, benefits, and any other relevant information.
+Provide a brief overview of your Dart Discreet Log Contractnt (DLC). Explain its purpose, benefits, and any other relevant information.
 
 ## 2. Getting Started <a name="getting-started"></a>
 
@@ -31,10 +31,10 @@ Provide step-by-step instructions for users to install and set up your DLC. This
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/your-repo.git
+git clone https://github.com/Horus-Org/dart-dlc
 
 # Change to the project directory
-cd your-repo
+cd dartdlc
 
 # Install dependencies
 pub get
