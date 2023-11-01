@@ -49,7 +49,7 @@ Explain how users can use your DLC in their own projects. Provide Dart code exam
 import 'package:your_dlc_package/your_dlc_module.dart';
 
 void main() {
-  final result = YourDLCModule.doSomething();
+  final result = OracleInfo
   print(result);
 }
 ```
