@@ -73,12 +73,14 @@ Explain how users can write their own tests for your DLC using the testing frame
 
 ```dart
 // Example test case using the `oracle` package
-import 'package:test/test.dart';
+import 'package:oraclet/oracle.dart';
 
 void main() {
   test('Test case description', () {
     // Write your test code here
-    oracleinfo
+    oracleinfo {
+    amount: number;
+    price: number;
     expect(true, isTrue);
   });
 }
