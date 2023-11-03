@@ -73,35 +73,19 @@ Explain how users can write their own tests for your DLC using the testing frame
 
 ```dart
 // Example test case using the `oracle` package
-import 'package:oraclet/oracle.dart';
+import 'package:test/test.dart';
 
 void main() {
   test('Test case description', () {
-    // Write your test code here
-    oracleinfo {
-    amount: number;
-    price: number;
-    expect(true, isTrue);
+    // Declare your test data
+    var amount = 10; // a number
+    var price = 20.5; // a floating-point number
+
+    // Write your test expectations
+    expect(amount, isA<int>());
+    expect(price, isA<double>());
   });
 }
+
 ```
-
-## 5. Contributing <a name="contributing"></a>
-
-Encourage users to contribute to your project by providing guidelines for contributing, reporting issues, and making pull requests.
-
-### 5.1 Code of Conduct
-
-Include a link to your project's Code of Conduct.
-
-### 5.2 How to Contribute
-
-Explain how users can contribute to your project, whether it's by reporting issues, suggesting improvements, or submitting code changes.
-
-### 5.3 Pull Request Guidelines
-
-Specify the process for submitting pull requests, including code review and coding standards.
-
-## 6. License <a name="license"></a>
-
 Specify the project's open-source license, such as MIT, Apache, or any other, and provide a link to the full license text.
