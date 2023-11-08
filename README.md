@@ -13,6 +13,10 @@
 - Elliptic Curve
 - Lightning Network (LDK)
 
+## Documentation
+
+[Docs](https://github.com/Horus-Org/dart-dlc/blob/main/docs/run.md)
+
 ## Roadmap
 
 - [x] Alpha software to Beta
