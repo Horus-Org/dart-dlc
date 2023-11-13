@@ -15,9 +15,10 @@ environment:
 # Dependencies for your project
 dependencies:
   # Add your project's dependencies here
-  # Example:
-  # http: ^0.13.3
-  # path: ^1.8.0
+  # rpc:
+  # endpoint:
+  # lightning_node:
+  
 
 # Dev dependencies for your project
 dev_dependencies:
