@@ -17,10 +17,6 @@
 
 [Docs](https://github.com/Horus-Org/dart-dlc/blob/main/docs/run.md)
 
-## Roadmap
-
-- [ ] Relase official beta
-
 ## Status Software
 
 The library is in Beta and WIP
