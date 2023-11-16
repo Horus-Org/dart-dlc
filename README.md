@@ -19,7 +19,6 @@
 
 ## Roadmap
 
-- [x] Complete libraries (WIP)
 - [ ] Relase official beta
 
 ## Status Software
