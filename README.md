@@ -16,7 +16,3 @@
 ## Documentation
 
 [Docs](https://github.com/Horus-Org/dart-dlc/blob/main/docs/run.md)
-
-## Status Software
-
-The library is in Beta and WIP
