@@ -16,3 +16,8 @@
 ## Documentation
 
 [Docs](https://github.com/Horus-Org/dart-dlc/blob/main/docs/run.md)
+
+## Roadmap
+
+- [ ] Feedback
+- [ ] Fix issues and bugs
