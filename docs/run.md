@@ -12,7 +12,7 @@
 
 ## 1. Introduction <a name="introduction"></a>
 
-Provide a brief overview of your Dart Discreet Log Contractnt (DLC). Explain its purpose, benefits, and any other relevant information.
+Provide a brief overview of your Dart Discreet Log Contractnt (DLC). 
 
 ## 2. Getting Started <a name="getting-started"></a>
 
