@@ -21,3 +21,4 @@
 
 - [ ] Feedback
 - [ ] Fix issues and bugs
+- [ ] Add new functions and features
