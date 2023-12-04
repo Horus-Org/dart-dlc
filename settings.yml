@@ -1,1 +1,46 @@
+# Bitcoin Core settings
+bitcoin_core:
+  rpc_user: your_rpc_user
+  rpc_password: your_rpc_password
+  rpc_host: 127.0.0.1
+  rpc_port: 8332
+  testnet: false
+
+# DLC (Discreet Log Contracts) settings
+dlc:
+  oracle_url: https://example.com/dlc-oracle
+  oracle_public_key: your_oracle_public_key
+  contract_timeout_blocks: 2016
+  fee_rate: 2.5
+
+# UTXO settings
+utxo:
+  utxo_threshold: 0.1
+  min_confirmations: 6
+
+# Other settings
+other_settings:
+  network: mainnet
+  data_directory: /path/to/bitcoin/data
+  log_level: debug
+  max_connections: 8
+  wallet_file: /path/to/wallet.dat
+  tor_enabled: false
+  tor_proxy: 127.0.0.1:9050
+
+# Add more settings as needed for your specific use case
+
+# Example additional settings:
+# lightning_network:
+#   lnd_host: 127.0.0.1
+#   lnd_port: 10009
+#   lnd_tls_cert: /path/to/tls.cert
+#   lnd_macaroon: /path/to/admin.macaroon
+
+# Example DLC Oracle settings:
+# oracle:
+#   url: https://dlc-oracle.example.com
+#   public_key: your_oracle_public_key
+#   signing_key: your_oracle_signing_key
+#   fee: 0.01
 
