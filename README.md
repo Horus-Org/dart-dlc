@@ -22,3 +22,4 @@
 - [ ] Feedback
 - [ ] Fix issues and bugs
 - [ ] Add new functions and features
+- [ ] Release out of beta
