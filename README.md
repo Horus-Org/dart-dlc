@@ -21,5 +21,5 @@
 
 - [ ] Feedback
 - [ ] Fix issues and bugs
-- [ ] Add new functions and features
+- [ ] Add new functions and features (Bitcoin Core, LND, CLN and Eclair)
 - [ ] Release out of beta
