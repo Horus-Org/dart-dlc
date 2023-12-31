@@ -22,4 +22,4 @@
 - [ ] Feedback
 - [ ] Fix issues and bugs
 - [ ] Add new functions and features (Bitcoin Core, LND, CLN and Eclair)
-- [ ] Release out of beta
+- [ ] Release out of beta in 2024
