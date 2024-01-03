@@ -1,4 +1,4 @@
-## Dart DLC Files
+## Dart DLC Files 👁️‍🗨️
 
 - Config: Configuration for support Bitcoin Core and Lightning Node
 - Docs: Documentation around Dart DLC
