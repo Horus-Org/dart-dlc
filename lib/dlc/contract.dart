@@ -30,8 +30,6 @@ class Contract {
     }
     return true;
   }
-
-  // Other methods...
 }
 
 class ContractOffer {
