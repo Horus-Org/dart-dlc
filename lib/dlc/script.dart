@@ -1,4 +1,4 @@
-import 'package:dlc_library/dlc_library.dart';
+import 'package::bitcoin_library/script.dart';
 
 void main() {
   final privateKey = Uint8List.fromList([/* your private key bytes */]);
