@@ -1,4 +1,5 @@
 import 'dart:typed_data';
+import 'bitcoin_dart::data';
 
 class Builder {
   // Constants
