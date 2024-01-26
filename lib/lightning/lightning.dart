@@ -1,5 +1,4 @@
 import 'package:ldk_node/ldk_node.dart'; // Import the LDK Node package or the appropriate Dart LDK package
-import 'package:oracle_client/oracle_client.dart'; // Import your custom Oracle client library
 
 class DLC {
   final OracleClient oracle;
