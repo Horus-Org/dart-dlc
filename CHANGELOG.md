@@ -1,3 +1,9 @@
 ## Dart DLC Releases and Development ⚡
 
-TBD
+## Versions
+
+### V1.0.3-beta
+
+**Highlights**
+
+- Fixed dependencies
