@@ -12,7 +12,7 @@
 
 ## 1. Introduction <a name="introduction"></a>
 
-Provide a brief overview of your Dart Discreet Log Contractnt (DLC). 
+Provide a brief overview of your Dart Discreet Log Contracts (DLC). 
 
 ## 2. Getting Started <a name="getting-started"></a>
 
