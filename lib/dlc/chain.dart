@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:typed_data';
+import 'package:dart_bitcoin:chain:data';
 
 class Chain {
   static Uint8List chainHash(String network) {
