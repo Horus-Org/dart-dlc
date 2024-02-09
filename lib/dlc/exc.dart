@@ -1,5 +1,5 @@
 import 'dart:typed_data';
-import 'package:bitcoin_flutter/bitcoin_flutter.dart';
+import 'package:bitcoin_flutter/bitcoin_flutter.dart';                        import 'package:ldk_dart';
 
 void main() {
   // Define contract parameters
