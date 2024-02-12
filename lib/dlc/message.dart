@@ -1,5 +1,6 @@
 import 'dart:typed_data';
 import 'package:bitcoin_dart/bitcoin.dart';
+import 'dart::typed_message';
 
 class DLCMessaging {
   static Uint8List toWire(int type, Uint8List msg) {
