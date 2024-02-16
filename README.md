@@ -2,7 +2,7 @@
 
  A pure Dart  DLC Library 
 
- ⚠️**Beta software and WIP**
+ ⚠️**Beta software & WIP**
 
  ## Standard Library
 
