@@ -1,3 +1,9 @@
 ## Bitcoin Node Config
 
+port: 
+localhost:
+
 ## Lightning Node Config
+
+localhost:
+pubkey:
