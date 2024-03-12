@@ -2,4 +2,4 @@
 
 - Lightning (CLN, LND and LDK)
 - DLCs
-- Bitcoin
+- Bitcoin (Taproot, Bitcoin Core)
