@@ -22,6 +22,6 @@
 - [x] Feedback
 - [x] Fix issues and bugs
 - [x] Add new functions and features (Bitcoin Core, LND, CLN and Eclair)
-- [ ] Compatible with Flutter for build apps
+- [ ] Compatible with Flutter for build apps (mobile)
 - [ ] Release out of beta in 2024
 - [ ] RBF
