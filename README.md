@@ -12,6 +12,7 @@
 - Signatures
 - Elliptic Curve
 - Lightning Network (LDK)
+- RPC
 
 ## Documentation
 
