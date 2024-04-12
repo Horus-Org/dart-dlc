@@ -6,7 +6,7 @@ name: dar_dlc
 description: Dart DLC library
 
 # Version of your package (e.g., 1.0.0)
-version: 1.0.0-beta.rc1
+version: 1.0.6-beta
 
 # The environment for your Dart project (e.g., 2.12)
 environment:
