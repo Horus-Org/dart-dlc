@@ -7,3 +7,9 @@
 **Highlights**
 
 - Fixed dependencies
+
+### V1.0.6-beta
+
+**Highlgihts**
+
+- Added RPC
