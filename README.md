@@ -26,3 +26,9 @@
 - [ ] Compatible with Flutter for build apps (mobile)
 - [ ] Release out of beta in 2024
 - [ ] RBF
+
+## Contributors
+
+<a align="center" href="https://github.com/Horus-Og/dart-dlc/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=FrostDevKit/javascript-frost" />
+</a>
