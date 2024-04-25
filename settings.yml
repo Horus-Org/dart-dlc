@@ -8,7 +8,7 @@ bitcoin_core:
 
 # DLC (Discreet Log Contracts) settings
 dlc:
-  oracle_url: https://example.com/dlc-oracle
+  oracle_url: https://dart-dlc/oracle
   oracle_public_key: your_oracle_public_key
   contract_timeout_blocks: 2016
   fee_rate: 2.5
