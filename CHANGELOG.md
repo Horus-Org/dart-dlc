@@ -35,3 +35,9 @@
 **Highlgihts**
 
 - Added RPC
+
+### V1.0.7-beta
+
+**Highlgihts**
+
+- Fixed dependencies
