@@ -27,7 +27,7 @@
 - [ ] Release out of beta in 2024
 - [ ] RBF
 - [ ] API
-- [ ] BOLT12
+- [ ] BOLT12 (Dart compatible)
 
 ## Contributors
 
