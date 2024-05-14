@@ -29,6 +29,7 @@
 - [ ] Full RBF
 - [ ] API
 - [ ] BOLT12 (Dart compatible)
+- [ ] Testnet4
 
 ## Contributors
 
