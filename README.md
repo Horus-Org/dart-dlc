@@ -20,9 +20,6 @@
 
 ## Roadmap
 
-- [x] Feedback
-- [x] Fix issues and bugs
-- [x] Add new functions and features (Bitcoin Core, LND, CLN and Eclair)
 - [ ] Dockerfile
 - [ ] Compatible with Flutter for build apps (mobile)
 - [ ] Release out of beta in 2024
@@ -31,6 +28,7 @@
 - [ ] API
 - [ ] BOLT12 (Dart compatible)
 - [ ] Testnet4
+- [ ] Bitcoin Knots
 
 ## Contributors
 
