@@ -7,6 +7,7 @@ environment:
   bitcoin_flutter: '2.0.1'
   lndar_.clnapp: '0.0.1'
   ldk_node: '0.2.0'
+  http: '^0.14.0'
 
 # Dependencies for the project
 dependencies:
