@@ -29,6 +29,7 @@
 - [ ] BOLT12 (Dart compatible)
 - [x] BOLT11
 - [ ] Testnet4
+- [ ] Mutinynet
 - [ ] Bitcoin Knots
 
 ## Contributors
