@@ -4,22 +4,22 @@ description: A pure Dart DLC library
 
 # Version of the Dart SDK this project works with
 environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+# Dependencies for the project
+dependencies:
   bitcoin_flutter: '2.0.1'
   lndar_.clnapp: '0.0.1'
   ldk_node: '0.2.0'
   http: '^0.14.0'
-
-# Dependencies for the project
-dependencies:
-  flutter: # replace with dart if not using Flutter
-    sdk: flutter
-  cupertino_icons: ^0.1.3 # replace with your desired version
+  cupertino_icons: ^0.1.3
 
 # Dev dependencies for the project
 dev_dependencies:
-  test: ^1.14.4 # replace with your desired version
+  test: ^1.14.4
 
 # Additional configurations, if any
 flutter:
   uses-material-design: true
+
 
