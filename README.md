@@ -24,7 +24,6 @@
 
 - [ ] Dockerfile
 - [ ] Compatible with Flutter for build apps (mobile)
-- [ ] Release out of beta in 2024
 - [ ] RBF
 - [ ] Full RBF
 - [ ] API
