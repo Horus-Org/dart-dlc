@@ -6,6 +6,8 @@
  
  ⚠️**Use small amount**
 
+ ⚠️**Don't use for mainnet**
+
  ## Standard Library
 
 - Oracle
