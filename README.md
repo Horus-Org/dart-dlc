@@ -24,7 +24,7 @@
 
 ## Roadmap
 
-- [ ] Dockerfile
+- [x] Dockerfile
 - [ ] Compatible with Flutter for build apps (mobile)
 - [ ] RBF
 - [ ] Full RBF
