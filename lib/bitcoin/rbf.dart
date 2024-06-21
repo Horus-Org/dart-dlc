@@ -8,3 +8,12 @@ impl RBF {
 impl Transaction {
   static const int DEFAULT_RBF_SEQUENCE = 0xfffffffd;
 }
+impl TransactionInput {
+  static const int DEFAULT_RBF_SEQUENCE = 0xfffffffd;
+}
+impl TransactionOutput {
+  static const int DEFAULT_RBF_SEQUENCE = 0xfffffffd;
+}
+impl BumpFee {
+  static const int DEFAULT_RBF_SEQUENCE = 0xfffffffd;
+}
