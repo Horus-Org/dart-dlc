@@ -17,3 +17,7 @@ impl TransactionOutput {
 impl BumpFee {
   static const int DEFAULT_RBF_SEQUENCE = 0xfffffffd;
 }
+impl TransactionBuilder {
+  static const int DEFAULT_RBF_SEQUENCE = 0xfffffffd;
+}
+
