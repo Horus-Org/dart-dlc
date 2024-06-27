@@ -9,13 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
+      # Install Dart SDK
       - name: Setup Dart SDK
-        uses: dart-lang/setup-dart@v2
-        with:
-          sdk: stable
+        uses: dart-lang/setup-dart@1.0.0
+
+      # Authenticate and publish package
       - name: Publish Package
         env:
-          PUB_PUBLISH_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUB_DEV_TOKEN: ${{ secrets.PUB_DEV_TOKEN }}
         run: |
           dart pub publish --dry-run
           dart pub publish -f
