@@ -1,5 +1,4 @@
-import 'package:ldk_node/ldk_node.dart'; // Import the LDK Node package or the appropriate Dart LDK package
-
+import 'package:ldk_node/ldk_node.dart';
 class DLC {
   final OracleClient oracle;
   final Channel channel;
@@ -7,11 +6,14 @@ class DLC {
   DLC(this.oracle, this.channel);
 
   Future<void> fund(int fundingAmount) async {
-    // Implement the funding logic here using LDK
-    // Create and sign funding transactions
-    // Broadcast the transaction to the Bitcoin network
-    // Handle errors and confirmations
-    // Update the channel state
+    final fundingTx = await channel.fund(fundingAmount);
+    // Wait for the funding transaction to be confirmed
+    await channel.waitForConfirmation(fundingTx);
+    // Wait for the channel to be fully funded
+    await channel.waitForFunded();
+    // Initiate the DLC contract
+    await oracle.initiateContract(/* Contract parameters */);
+
   }
 
   Future<void> monitorOracle() async {
