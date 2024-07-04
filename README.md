@@ -33,6 +33,7 @@
 - [x] BOLT11
 - [ ] Mutinynet
 - [ ] Bitcoin Knots
+- [ ] Pub.dev package
 
 ## Contributors
 
