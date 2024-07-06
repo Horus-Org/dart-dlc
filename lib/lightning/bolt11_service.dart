@@ -11,6 +11,9 @@ class Bolt11Service {
     required String description,
     required int expiry,
     required String payeeNodeKey,
+    required String payeeBase64,
+    required String jsonEncode,
+    required String jsonDecode,
   }) async {
     final response = await http.post(
       Uri.parse('$baseUrl/generate_invoice'),
