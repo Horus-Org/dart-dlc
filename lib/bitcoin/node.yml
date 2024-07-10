@@ -1,5 +1,5 @@
 # Bitcoin Core Node
 
-host:
-post:
-tor:
+port = 8333
+rpcport = 8332
+datadir = "/mnt/hdd/bitcoin"
