@@ -29,7 +29,7 @@
 - [ ] RBF
 - [ ] Full RBF
 - [ ] API
-- [x] BOLT12 (Dart compatible) [WIP]
+- [x] BOLT12 (Dart compatible)
 - [x] BOLT11
 - [ ] Mutinynet
 - [ ] Bitcoin Knots
