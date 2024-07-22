@@ -26,3 +26,11 @@ class ChannelConfigBuilder {
     required this.forceCloseAvoidanceMaxFeeSatoshis,
     required this.acceptUnderpayingHtlcs,
   });
+
+class ChannelConfigBuilder {
+  late int forwardingFeeProportionalMillionths;
+  late int forwardingFeeBaseMsat;
+  late int cltvExpiryDelta;
+  late int maxDustHtlcExposure;
+  late int forceCloseAvoidanceMaxFeeSatoshis;
+  late bool acceptUnderpayingHtlcs;
