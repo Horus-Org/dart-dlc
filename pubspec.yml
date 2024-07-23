@@ -4,7 +4,7 @@ description: A pure Dart DLC library
 
 # Version of the Dart SDK this project works with
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: '<4.0.0'
 
 # Dependencies for the project
 dependencies:
