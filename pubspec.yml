@@ -12,7 +12,7 @@ dependencies:
   lndar_.clnapp: '0.0.1'
   ldk_node: '0.2.0'
   http: '^0.14.0'
-  cupertino_icons: ^0.1.3
+  cupertino_icons: ^1.0.0
 
 # Dev dependencies for the project
 dev_dependencies:
