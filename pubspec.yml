@@ -1,6 +1,8 @@
 name: dart_dlc
 version: 1.0.10-beta
 description: A pure Dart DLC library
+homepage: https://github.com/Horus-Org/dart-dlc
+
 
 # Version of the Dart SDK this project works with
 environment:
@@ -13,6 +15,7 @@ dependencies:
   ldk_node: '0.3.0'
   http: '^0.14.0'
   cupertino_icons: ^1.0.0
+  bdk: '^0.31.2'
 
 # Dev dependencies for the project
 dev_dependencies:
