@@ -35,6 +35,7 @@
 - [ ] Bitcoin Knots
 - [ ] Pub.dev package
 - [ ] Nostr
+
 ## Contributors
 
 <a align="center" href="https://github.com/Horus-Og/dart-dlc/graphs/contributors">
