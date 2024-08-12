@@ -41,6 +41,7 @@
 - [ ] Bitcoin Knots
 - [ ] Pub.dev package
 - [ ] Nostr
+- [ ] Rust compatible
 
 ## Contributors
 
