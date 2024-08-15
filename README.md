@@ -42,6 +42,7 @@
 - [ ] Pub.dev package
 - [ ] Nostr
 - [ ] Rust compatible
+- [ ] Taproot
 
 ## Contributors
 
