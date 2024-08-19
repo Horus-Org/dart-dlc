@@ -5,3 +5,6 @@ void main() {
   var api = new Api();
   api.get_api_version();
 }
+
+var api = new Api();
+api.get_api_version();
