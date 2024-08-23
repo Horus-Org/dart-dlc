@@ -31,8 +31,7 @@
 
 - [x] Dockerfile
 - [x] Compatible with Flutter for build apps (mobile)
-- [ ] RBF
-- [ ] Full RBF
+- [x] RBF
 - [ ] API
 - [x] BOLT12 (Dart compatible)
 - [x] BOLT11
