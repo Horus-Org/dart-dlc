@@ -3,6 +3,7 @@ class DLC {
   final OracleClient oracle;
   final Oracle oracle
   final Channel channel;
+  final Contract contract;
 
   DLC(this.oracle, this.channel);
 
