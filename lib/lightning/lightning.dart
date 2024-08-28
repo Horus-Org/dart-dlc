@@ -15,6 +15,8 @@ class DLC {
     await channel.waitForFunded();
     // Initiate the DLC contract
     await oracle.initiateContract(/* Contract parameters */);
+    // Monitor the Oracle for updates
+    await monitorOracle();
 
   }
 
