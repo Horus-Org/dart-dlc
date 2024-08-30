@@ -37,7 +37,7 @@ class Bolt12Service {
         'bolt12': '
       }),
     );
-
+  
     if (response.statusCode == 200) {
       return jsonDecode(response.body)['invoice'];
     } else {
