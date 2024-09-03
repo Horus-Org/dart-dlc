@@ -13,8 +13,6 @@ dependencies:
   ldk_node: '0.3.0'
   http: '1.2.2'
   cupertino_icons: '1.0.8'
-  bdk_flutter: '^0.30.0'
-  flutter: '3.0.0'
   
 # Dev dependencies for the project
 dev_dependencies:
