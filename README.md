@@ -40,7 +40,7 @@
 - [ ] Bitcoin Knots
 - [ ] Pub.dev package
 - [ ] Nostr
-- [ ] Rust compatible
+- [ ] Rust compatible (bindings)
 - [ ] Taproot
 
 ## Contributors
