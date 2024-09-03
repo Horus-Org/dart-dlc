@@ -10,7 +10,6 @@ environment:
 # Dependencies for the project
 dependencies:
   bitcoin_flutter: '2.0.2'
-  lndar_.clnapp: '0.0.1'
   ldk_node: '0.3.0'
   http: '^0.14.0'
   cupertino_icons: ^1.0.0
