@@ -3,10 +3,9 @@ version: 1.0.13-beta
 description: A pure Dart DLC library
 homepage: https://github.com/Horus-Org/dart-dlc
 
-
 # Version of the Dart SDK this project works with
 environment:
-  sdk: '<4.0.0'
+  sdk: '>=2.12.0 <4.0.0'  # You can adjust the lower bound based on the features used
 
 # Dependencies for the project
 dependencies:
