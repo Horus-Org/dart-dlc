@@ -12,7 +12,7 @@ dependencies:
   bitcoin_flutter: '2.0.2'
   ldk_node: '0.3.0'
   http: '1.2.2'
-  cupertino_icons: '1.0.0'
+  cupertino_icons: '1.0.8'
   bdk_flutter: '^0.30.0'
   
 # Dev dependencies for the project
