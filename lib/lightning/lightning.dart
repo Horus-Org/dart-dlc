@@ -24,6 +24,7 @@ class DLC {
     // Continuously monitor the Oracle for updates
     // Verify Oracle data signatures
     // Update the contract state based on Oracle data
+    await oracle.updateContractState(/* Oracle data */);
   }
 
   Future<void> executeContract() async {
