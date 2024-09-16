@@ -35,7 +35,7 @@
 - [ ] API
 - [x] BOLT12 (Dart compatible)
 - [x] BOLT11
-- [ ] Breez SDK compatibility
+- [x] Breez SDK compatibility
 - [ ] Bitcoin Knots
 - [ ] Pub.dev package
 - [ ] Nostr

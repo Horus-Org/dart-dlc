@@ -11,9 +11,10 @@ environment:
 dependencies:
   http: '1.2.2'
   cupertino_icons: '1.0.8'
-  bdk_flutter: '^0.30.0 '       
-  ldk_flutter: ''      
-  flutter:           
+  bdk_flutter: '^0.30.0 '  
+  ldk_flutter: '^0.0.3'     
+  flutter: '^3.24.3'
+  breez_sdk.dart: '^0.5.2'
 # Dev dependencies for the project
 dev_dependencies:
   test: ^1.14.4
