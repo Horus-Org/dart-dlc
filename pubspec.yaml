@@ -5,7 +5,8 @@ homepage: https://github.com/Horus-Org/dart-dlc
 
 ## SDK enviroment
 environment:
-   sdk: '^3.5.0'
+   sdk: '>=2.12.0 <3.0.0'
+  flutter: '>= 3.22.0'
 
 # Dependencies for the project
 dependencies:
@@ -13,8 +14,10 @@ dependencies:
   cupertino_icons: '1.0.8'
   bdk_flutter: '^0.30.0 '  
   ldk_flutter: '^0.0.3' 
+  bitcoin_flutter: '^1.0.1'
   flutter: '^3.13.0'    
   breez_sdk: '^0.5.2'
+
 # Dev dependencies for the project
 dev_dependencies:
   test: ^1.14.4

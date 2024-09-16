@@ -1,5 +1,5 @@
 import 'package:bitcoin/bitcoin.dart';
-import 'package::bitcoin/ECDSA.dart';
+import 'package:bitcoin/bitcoin.dart';
 
 class DlcTransaction {
   BitcoinTransaction transaction;
