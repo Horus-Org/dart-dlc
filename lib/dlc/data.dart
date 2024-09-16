@@ -1,4 +1,3 @@
-import 'dart:typed_data';
 import 'package:bitcoin_dart/bitcoin_dart';
 
 void main() {

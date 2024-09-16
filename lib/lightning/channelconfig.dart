@@ -1,6 +1,6 @@
 'package:ldk_node_package/ChannelConfig';
 
-const ChannelConfig({
+ChannelConfig({
   required this.forwardingFeeProportionalMillionths,
   required this.forwardingFeeBaseMsat,
   required this.cltvExpiryDelta,
