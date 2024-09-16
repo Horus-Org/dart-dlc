@@ -5,7 +5,7 @@ homepage: https://github.com/Horus-Org/dart-dlc
 
 # Version of the Dart SDK this project works with
 environment:
-  sdk: '3.5.0'  # You can adjust the lower bound based on the features used
+  sdk: '3.5.3'  # You can adjust the lower bound based on the features used
 
 # Dependencies for the project
 dependencies:
