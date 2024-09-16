@@ -29,6 +29,12 @@ class DLC {
   }
 }
 
+class Channel {
+}
+
+class OracleClient {
+}
+
 void main() async {
   // Initialize LDK and set up the Lightning Network channel
   final config = ChannelConfig.defaultConfig();
