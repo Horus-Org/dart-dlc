@@ -1,6 +1,5 @@
 import 'dart:typed_data';
-import 'bitcoin_dart::data';
-
+import bdk_dart:UriData;
 class Builder {
   // Constants
   static final int txVersion = 2;
