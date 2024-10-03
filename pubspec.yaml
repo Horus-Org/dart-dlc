@@ -13,7 +13,7 @@ dependencies:
   cupertino_icons: '1.0.8'
   bdk_flutter: '^0.30.0'  
   ldk_flutter: '^0.0.3' 
-  bitcoin_flutter: '^1.0.1'
+  bitcoin_flutter: '^2.0.0'
   flutter: '^3.13.0'    
   breez_sdk: '^0.6.1'
 
