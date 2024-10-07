@@ -41,6 +41,8 @@
 - [ ] Nostr
 - [ ] Rust compatible (bindings)
 - [ ] Taproot
+- [ ] CLI
+- [ ] Fix bugs and issues
 
 ## Contributors
 
