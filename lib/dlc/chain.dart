@@ -1,5 +1,5 @@
 import 'dart:typed_data';
-import 'package:dart_bitcoin:chain:data';
+import 'package:dart_bitcoin';
 
 class Chain {
   static Uint8List chainHash(String network) {
@@ -31,4 +31,8 @@ void main() {
   String network = 'mainnet'; // Replace with 'testnet' if needed
   Uint8List hash = ExFactoChain.chainHash(network);
   print('Chain Hash: ${hash}');
+}
+
+class ExFactoChain {
+  static Uint8List chainHash(String network) {}
 }
