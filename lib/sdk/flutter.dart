@@ -21,8 +21,10 @@ class MyApp extends StatelessWidget {
                 return CircularProgressIndicator();
               } else if (snapshot.hasError) {
                 return Text('Error: ${snapshot.error}');
-              } else {
+              } else if (snapshot.hasData) {
                 return Text('Data: ${snapshot.data}');
+              } else {
+                return Text('No data found');
               }
             },
           ),
@@ -35,9 +37,10 @@ class MyApp extends StatelessWidget {
     final response = await http.get(Uri.parse('https://jsonplaceholder.typicode.com/posts/1'));
     if (response.statusCode == 200) {
       var jsonResponse = jsonDecode(response.body);
-      return jsonResponse['title'];
+      return jsonResponse['title'] ?? 'No title found'; // Handle potential null value
     } else {
       throw Exception('Failed to load data');
     }
   }
 }
+

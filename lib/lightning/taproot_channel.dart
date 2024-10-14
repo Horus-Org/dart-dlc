@@ -1,5 +1,4 @@
 import 'package:ldk_node/ldk_node.dart';
-import 'package:oracle_client/oracle_client.dart';
 
 class DLC {
   final OracleClient oracle;
@@ -8,32 +7,130 @@ class DLC {
   DLC(this.oracle, this.channel);
 
   Future<void> fund(int fundingAmount) async {
-    // Implement the funding logic here using LDK
-    // Create and sign funding transactions
-    // Broadcast the transaction to the Bitcoin network
-    // Handle errors and confirmations
-    // Update the channel state
+    try {
+      // 1. Create funding transactions
+      final tx = await channel.createFundingTransaction(fundingAmount);
+
+      // 2. Sign the funding transaction
+      final signedTx = await channel.signTransaction(tx);
+
+      // 3. Broadcast the transaction to the Bitcoin network
+      await channel.broadcastTransaction(signedTx);
+
+      // 4. Update the channel state to reflect that it's funded
+      await channel.updateState(ChannelState.funded);
+
+      print("Channel funded successfully with $fundingAmount satoshis.");
+    } catch (e) {
+      print("Error funding channel: $e");
+    }
   }
 
   Future<void> monitorOracle() async {
-    // Continuously monitor the Oracle for updates
-    // Verify Oracle data signatures
-    // Update the contract state based on Oracle data
+    try {
+      // Continuously monitor Oracle updates
+      while (true) {
+        final oracleData = await oracle.getLatestData();
+
+        // Verify the oracle data
+        if (oracle.verifySignature(oracleData)) {
+          print("Oracle data verified: ${oracleData.value}");
+          
+          // Update DLC contract based on oracle data
+          await channel.updateContractState(oracleData.value);
+        } else {
+          print("Invalid oracle data signature.");
+        }
+
+        // Sleep for a while before checking again
+        await Future.delayed(Duration(seconds: 10));
+      }
+    } catch (e) {
+      print("Error monitoring oracle: $e");
+    }
   }
 
   Future<void> executeContract() async {
-    // Implement contract execution logic
-    // Determine contract outcomes
-    // Create and broadcast settlement transactions
-    // Distribute funds based on contract terms
+    try {
+      // Check the contract outcome based on oracle data
+      final outcome = channel.determineOutcome();
+
+      // Create a settlement transaction based on the outcome
+      final settlementTx = await channel.createSettlementTransaction(outcome);
+
+      // Sign and broadcast the settlement transaction
+      final signedTx = await channel.signTransaction(settlementTx);
+      await channel.broadcastTransaction(signedTx);
+
+      // Distribute the funds as per the contract terms
+      await channel.distributeFunds(outcome);
+
+      print("Contract executed and funds distributed based on outcome.");
+    } catch (e) {
+      print("Error executing contract: $e");
+    }
   }
 }
 
 class Channel {
+  Future<Transaction> createFundingTransaction(int amount) async {
+    // Logic to create the funding transaction
+    return Transaction(); // Placeholder
+  }
+
+  Future<Transaction> signTransaction(Transaction tx) async {
+    // Logic to sign the transaction
+    return tx; // Placeholder
+  }
+
+  Future<void> broadcastTransaction(Transaction tx) async {
+    // Logic to broadcast the transaction to the Bitcoin network
+  }
+
+  Future<void> updateState(ChannelState state) async {
+    // Update the channel's state
+  }
+
+  Future<void> updateContractState(int oracleValue) async {
+    // Update contract based on oracle value
+  }
+
+  Future<int> determineOutcome() async {
+    // Determine the contract outcome based on oracle data
+    return 1; // Placeholder for contract outcome
+  }
+
+  Future<Transaction> createSettlementTransaction(int outcome) async {
+    // Create a settlement transaction based on the contract outcome
+    return Transaction(); // Placeholder
+  }
+
+  Future<void> distributeFunds(int outcome) async {
+    // Distribute funds based on contract outcome
+  }
 }
 
 class OracleClient {
+  Future<OracleData> getLatestData() async {
+    // Logic to fetch latest data from the oracle
+    return OracleData(); // Placeholder
+  }
+
+  bool verifySignature(OracleData data) {
+    // Logic to verify oracle data signatures
+    return true; // Placeholder
+  }
 }
+
+class OracleData {
+  final int value = 1; // Placeholder value from the oracle
+}
+
+class Transaction {
+  // Placeholder for a Bitcoin transaction
+}
+
+enum ChannelState { open, funded, closed }
 
 void main() async {
   // Initialize LDK and set up the Lightning Network channel
@@ -41,7 +138,7 @@ void main() async {
   final chan = createChannel(config, Network.bitcoin);
 
   // Initialize the Oracle client
-  final oracle = OracleClient(/* Oracle configuration */);
+  final oracle = OracleClient();
 
   // Create a DLC instance
   final dlc = DLC(oracle, chan);
@@ -55,4 +152,3 @@ void main() async {
   // Execute the contract when conditions are met
   await dlc.executeContract();
 }
-
