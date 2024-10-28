@@ -1,4 +1,5 @@
 import 'dart:typed_data';
+// ignore: unused_import
 import bdk_dart:UriData;
 class Builder {
   // Constants
