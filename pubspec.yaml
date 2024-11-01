@@ -3,9 +3,9 @@ version: 1.0.15-beta
 description: A pure Dart DLC library
 homepage: https://github.com/Horus-Org/dart-dlc
 
-## SDK environment
 environment:
-  sdk: '^3.5.0'
+  sdk: ^3.5.0
+  flutter: '>= 3.22.0'
 
 # Dependencies for the project
 dependencies:
