@@ -1,7 +1,7 @@
 import 'package:secp256k1/secp256k1.dart';
 import 'package:bitcoinex/bitcoinex.dart' as Bitcoinex;
 
-class Contract {
+abstract class Contract {
   static const int defaultContractFlags = 0;
 
   int totalCollateral;
