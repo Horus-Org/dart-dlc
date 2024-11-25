@@ -29,13 +29,7 @@
 
 ## Roadmap
 
-- [x] Dockerfile
-- [x] Compatible with Flutter for build apps (mobile)
-- [x] RBF
 - [ ] API
-- [x] BOLT12 (Dart compatible)
-- [x] BOLT11
-- [x] Breez SDK compatibility
 - [ ] Bitcoin Knots
 - [ ] Pub.dev package
 - [ ] Nostr
