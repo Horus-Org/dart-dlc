@@ -1,9 +1,11 @@
-import 'package:bitcoin/bitcoin.dart';
+import 'package:bitcoin_flutter/bitcoin_flutter.dart';
 import 'package:bitcoin/bitcoin.dart';
 
 class DlcTransaction {
   BitcoinTransaction transaction;
   // Add more properties and methods as needed
+  final List<DlcScript> scripts;
+  final List<DlcSignature> signatures;
 }
 
 class DlcScript {
