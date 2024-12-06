@@ -132,8 +132,9 @@ class Transaction {
 
 enum ChannelState { open, funded, closed }
 
-void main() async {
+void main(dynamic Network) async {
   // Initialize LDK and set up the Lightning Network channel
+  var ChannelConfig;
   final config = ChannelConfig.defaultConfig();
   final chan = createChannel(config, Network.bitcoin);
 
@@ -152,3 +153,7 @@ void main() async {
   // Execute the contract when conditions are met
   await dlc.executeContract();
 }
+
+createChannel(config, bitcoin) {
+}
+
