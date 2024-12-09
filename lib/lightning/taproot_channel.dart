@@ -56,14 +56,14 @@ class DLC {
       final outcome = channel.determineOutcome();
 
       // Create a settlement transaction based on the outcome
-      final settlementTx = await channel.createSettlementTransaction(outcome);
+      final settlementTx = await channel.createSettlementTransaction(outcome as int);
 
       // Sign and broadcast the settlement transaction
       final signedTx = await channel.signTransaction(settlementTx);
       await channel.broadcastTransaction(signedTx);
 
       // Distribute the funds as per the contract terms
-      await channel.distributeFunds(outcome);
+      await channel.distributeFunds(outcome as int);
 
       print("Contract executed and funds distributed based on outcome.");
     } catch (e) {

@@ -1,7 +1,11 @@
 import 'package:ldk_node/ldk_node.dart';
+
+import '../dlc/contract.dart';
+import '../dlc/oracle.dart';
+import 'taproot_channel.dart';
 class DLC {
   final OracleClient oracle;
-  final Oracle oracle
+  final Oracle oracle;
   final Channel channel;
   final Contract contract;
 
