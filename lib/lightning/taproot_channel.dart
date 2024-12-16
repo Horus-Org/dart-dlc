@@ -1,5 +1,4 @@
-import 'package:ldk_node/ldk_node.dart';
-
+import 'channelconfig.dart';
 class DLC {
   final OracleClient oracle;
   final Channel channel;
