@@ -1,4 +1,3 @@
-import 'channelconfig.dart';
 class DLC {
   final OracleClient oracle;
   final Channel channel;
