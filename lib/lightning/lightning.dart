@@ -3,60 +3,91 @@ import 'package:ldk_node/ldk_node.dart';
 import '../dlc/contract.dart';
 import '../dlc/oracle.dart';
 import 'taproot_channel.dart';
+
 class DLC {
   final OracleClient oracle;
-  final OracleClient oracleClient;
   final Channel channel;
-  final Contract contract;
 
   DLC(this.oracle, this.channel);
 
+  /// Funds the DLC channel and waits for confirmation
   Future<void> fund(int fundingAmount) async {
-    final fundingTx = await channel.fund(fundingAmount);
-    // Wait for the funding transaction to be confirmed
-    await channel.waitForConfirmation(fundingTx);
-    // Wait for the channel to be fully funded
-    await channel.waitForFunded();
-    // Initiate the DLC contract
-    await oracle.initiateContract(/* Contract parameters */);
-    // Monitor the Oracle for updates
-    await monitorOracle();
+    try {
+      final fundingTx = await channel.fund(fundingAmount);
+      print('Funding transaction broadcasted: $fundingTx');
 
+      // Wait for the funding transaction to be confirmed
+      await channel.waitForConfirmation(fundingTx);
+      print('Funding transaction confirmed.');
+
+      // Wait for the channel to be fully funded
+      await channel.waitForFunded();
+      print('Channel fully funded.');
+
+      // Initiate the DLC contract
+      await oracle.initiateContract(/* Pass appropriate contract parameters */);
+      print('DLC contract initiated.');
+
+      // Monitor the Oracle for updates
+      await monitorOracle();
+    } catch (e) {
+      print('Error while funding DLC: $e');
+      rethrow; // Optionally rethrow if the caller needs to handle this
+    }
   }
 
+  /// Monitors the Oracle for updates and adjusts the contract state
   Future<void> monitorOracle() async {
-    // Continuously monitor the Oracle for updates
-    // Verify Oracle data signatures
-    // Update the contract state based on Oracle data
-    await oracle.updateContractState(/* Oracle data */);
+    try {
+      // Continuously monitor the Oracle for updates
+      // Verify Oracle data signatures and update the contract state
+      await oracle.updateContractState(/* Oracle data */);
+      print('Oracle state updated.');
+    } catch (e) {
+      print('Error while monitoring Oracle: $e');
+    }
   }
 
+  /// Executes the contract logic
   Future<void> executeContract() async {
-    // Implement contract execution logic
-    // Determine contract outcomes
-    // Create and broadcast settlement transactions
-    // Distribute funds based on contract terms
+    try {
+      // Implement contract execution logic here
+      // Example:
+      // - Determine contract outcomes
+      // - Create and broadcast settlement transactions
+      // - Distribute funds based on contract terms
+      print('Executing contract...');
+      // Add execution logic
+    } catch (e) {
+      print('Error while executing contract: $e');
+    }
   }
 }
 
 void main() async {
-  // Initialize LDK and set up the Lightning Network channel
-  final config = ChannelConfig.defaultConfig();
-  final chan = createChannel(config, Network.bitcoin);
+  try {
+    // Initialize LDK and set up the Lightning Network channel
+    final config = ChannelConfig.defaultConfig(); // Assuming a default configuration is provided
+    final chan = createChannel(config, Network.bitcoin);
 
-  // Initialize the Oracle client
-  final oracle = OracleClient(/* Oracle configuration */);
+    // Initialize the Oracle client
+    final oracle = OracleClient(/* Oracle configuration */);
 
-  // Create a DLC instance
-  final dlc = DLC(oracle, chan);
+    // Create a DLC instance
+    final dlc = DLC(oracle, chan);
 
-  // Fund the DLC
-  await dlc.fund(100000);
+    // Fund the DLC
+    print('Funding the DLC...');
+    await dlc.fund(100000);
 
-  // Start monitoring the Oracle
-  await dlc.monitorOracle();
+    // Start monitoring the Oracle
+    print('Monitoring Oracle...');
+    await dlc.monitorOracle();
 
-  // Execute the contract when conditions are met
-  await dlc.executeContract();
+    // Execute the contract when conditions are met
+    print('Executing DLC contract...');
+    await dlc.executeContract();
+  } catch (e) {
+    print('An error occurred in main: $e');
+  }
 }
-
