@@ -9,7 +9,7 @@ environment:
 
 # Dependencies for the project
 dependencies:
-  http: '1.2.2'
+  http: '1.3.0'
   cupertino_icons: '1.0.8'
   bdk_flutter: '^0.31.0'  
   ldk_flutter: '^0.0.3' 
