@@ -5,7 +5,7 @@ class Bolt12Service {
   final String baseUrl;
 
   Bolt12Service(this.baseUrl);
-
+}
   Future<String> generateInvoice({
     required int satoshis,
     required String description,
