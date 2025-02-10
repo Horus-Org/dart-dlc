@@ -62,6 +62,10 @@ class DLC {
   }
 }
 
+extension on Channel {
+  waitForConfirmation(fundingTx) {}
+}
+
 void main() async {
   try {
     // Initialize LDK and set up the Lightning Network channel
