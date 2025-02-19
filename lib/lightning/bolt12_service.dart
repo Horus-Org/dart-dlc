@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'package:http/http.dart' as http;
 
 class Bolt12Service {
   final String baseUrl;
@@ -16,9 +15,9 @@ class Bolt12Service {
     required String payeeNodePubkey,
     required String onionMessage,
     required String payeeBase64,
-    required String jsonEncode,
-    required String jsonDecode,
   }) async {
+    var baseUrl;
+    var http;
     final response = await http.post(
       Uri.parse('$baseUrl/generate_invoice'),
       headers: {'Content-Type': 'application/json'},
@@ -27,25 +26,24 @@ class Bolt12Service {
         'description': description,
         'expiry': expiry,
         'payeeNodeKey': payeeNodeKey,
-        'onionMessage': onionMessage,
-        'payeeBase64': payeeBase64,
         'payeeNodeAddress': payeeNodeAddress,
         'payeeNodeAlias': payeeNodeAlias,
         'payeeNodePubkey': payeeNodePubkey,
-        'jsonEncode': jsonEncode,
-        'jsonDecode': jsonDecode,
-        'bolt12': '
+        'onionMessage': onionMessage,
+        'payeeBase64': payeeBase64,
       }),
     );
   
     if (response.statusCode == 200) {
-      return jsonDecode(response.body)['invoice'];
+      final decodedResponse = jsonDecode(response.body);
+      return decodedResponse['invoice'];
     } else {
       throw Exception('Failed to generate invoice');
     }
   }
-
   Future<Map<String, dynamic>> decodeInvoice(String bolt12Invoice) async {
+    var baseUrl;
+    var http;
     final response = await http.post(
       Uri.parse('$baseUrl/decode_invoice'),
       headers: {'Content-Type': 'application/json'},
