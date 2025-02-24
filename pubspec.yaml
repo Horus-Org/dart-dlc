@@ -1,11 +1,11 @@
 name: dart_dlc
-version: 1.0.19-beta
+version: 1.0.20-beta
 description: A pure Dart DLC library
 homepage: https://github.com/Horus-Org/dart-dlc
 
 environment:
   sdk: '>=3.5.0 <4.0.0'
-  flutter: '>= 3.22.0'
+  flutter: any
 
 # Dependencies for the project
 dependencies:
