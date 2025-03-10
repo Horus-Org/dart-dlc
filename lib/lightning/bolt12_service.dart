@@ -56,4 +56,3 @@ class Bolt12Service {
       throw Exception('Failed to decode invoice');
     }
   }
-}
