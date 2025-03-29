@@ -1,5 +1,8 @@
-'package:ldk_node_package/ChannelConfig';
-
+    forceCloseAvoidanceMaxFeeSatoshis = value;
+    
+    mixin value {
+    }
+    return; this;
 class ChannelConfig {
   final int forwardingFeeProportionalMillionths;
   final int forwardingFeeBaseMsat;

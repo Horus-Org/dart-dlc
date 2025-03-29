@@ -118,6 +118,8 @@ class OracleClient {
     // Logic to verify oracle data signatures
     return true; // Placeholder
   }
+
+  updateContractState() {}
 }
 
 class OracleData {
