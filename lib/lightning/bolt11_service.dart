@@ -1,10 +1,11 @@
 import 'dart:convert';
-import 'package:http/http.dart' as http;
 
 class Bolt11Service {
   final String baseUrl;
 
   Bolt11Service(this.baseUrl);
+  
+  get http => null;
 
   Future<String> generateInvoice({
     required int satoshis,
@@ -12,8 +13,6 @@ class Bolt11Service {
     required int expiry,
     required String payeeNodeKey,
     required String payeeBase64,
-    required String jsonEncode,
-    required String jsonDecode,
   }) async {
     final response = await http.post(
       Uri.parse('$baseUrl/generate_invoice'),
@@ -22,17 +21,18 @@ class Bolt11Service {
         'satoshis': satoshis,
         'description': description,
         'expiry': expiry,
-        'payeeNodeKey': payeeNodeKey,
+        'payee_node_key': payeeNodeKey,
+        'payee_base64': payeeBase64,
       }),
     );
 
     if (response.statusCode == 200) {
-      return jsonDecode(response.body)['invoice'];
+      final decodedResponse = jsonDecode(response.body);
+      return decodedResponse['invoice'];
     } else {
       throw Exception('Failed to generate invoice');
     }
   }
-
   Future<Map<String, dynamic>> decodeInvoice(String bolt11Invoice) async {
     final response = await http.post(
       Uri.parse('$baseUrl/decode_invoice'),
