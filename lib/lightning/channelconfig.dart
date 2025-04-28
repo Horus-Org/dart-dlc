@@ -1,9 +1,8 @@
-    forceCloseAvoidanceMaxFeeSatoshis = value;
+    Type forceCloseAvoidanceMaxFeeSatoshis = value;
     
     mixin value {
-    }
-    return; this;
-class ChannelConfig {
+    }    
+    class ChannelConfig {
   final int forwardingFeeProportionalMillionths;
   final int forwardingFeeBaseMsat;
   final int cltvExpiryDelta;
@@ -19,6 +18,8 @@ class ChannelConfig {
     required this.forceCloseAvoidanceMaxFeeSatoshis,
     required this.acceptUnderpayingHtlcs,
   });
+
+  static defaultConfig() {}
 }
 
 class ChannelConfigBuilder {

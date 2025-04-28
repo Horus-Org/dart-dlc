@@ -1,5 +1,5 @@
-import 'package:ldk_node/ldk_node.dart';
-
+import 'channelconfig.dart';
+import 'taproot_channel.dart';
 import 'taproot_channel.dart';
 
 class DLC {
@@ -92,4 +92,8 @@ void main() async {
   } catch (e) {
     print('An error occurred in main: $e');
   }
+}
+
+class Network {
+  static var bitcoin;
 }

@@ -106,6 +106,10 @@ class Channel {
   Future<void> distributeFunds(int outcome) async {
     // Distribute funds based on contract outcome
   }
+
+  waitForFunded() {}
+
+  fund(int fundingAmount) {}
 }
 
 class OracleClient {
@@ -120,6 +124,8 @@ class OracleClient {
   }
 
   updateContractState() {}
+
+  initiateContract() {}
 }
 
 class OracleData {
