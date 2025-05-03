@@ -30,7 +30,7 @@
 ## Roadmap
 
 - [ ] API
-- [ ] Bitcoin Knots
+- [x] Bitcoin Knots
 - [ ] Pub.dev package
 - [ ] Nostr
 - [ ] Rust compatible (bindings)
