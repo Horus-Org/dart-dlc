@@ -15,7 +15,7 @@ dependencies:
   ldk_flutter: '^0.0.3' 
   bitcoin_flutter: '^2.0.0'
   flutter: '^3.13.0'    
-  breez_sdk: '^0.7.0'
+  breez_sdk: '^0.8.0'
 
 # Dev dependencies for the project
 dev_dependencies:
