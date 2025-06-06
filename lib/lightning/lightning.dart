@@ -1,6 +1,5 @@
 import 'channelconfig.dart';
 import 'taproot_channel.dart';
-import 'taproot_channel.dart';
 
 class DLC {
   final OracleClient oracle;

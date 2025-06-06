@@ -29,3 +29,4 @@ currently being supported with security updates.
 | 1.0.19-beta  | :white_check_mark: |
 | 1.0.20-beta  | :white_check_mark: |
 | 1.0.21-beta  | :white_check_mark: |
+| 1.0.22-beta  | :white_check_mark: |
