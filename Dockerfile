@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 FROM dart:latest
-FROM dart-dlc:1.0.10
+FROM dart-dlc:1.0.23
 FROM ldk-node-flutter:0.3.0
 FROM bdk:0.31.2
 RUN git clone https://github.com/Horus-Org-dart-dlc.git
